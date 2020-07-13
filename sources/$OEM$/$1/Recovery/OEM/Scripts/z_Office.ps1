@@ -1,0 +1,1 @@
+﻿Set-Location 'C:\Recovery\OEM\Software\Office2010\x64\'# Install quietly"Removing Office APP"get-appxpackage *officehub* | remove-appxpackage"Installing... Office 2010"Start-Process "setup.exe" -ArgumentList "/config .\config.xml" -Wait"Tidying Up"Remove-Item 'HKLM:\SOFTWARE\Microsoft\Office\14.0\Registration' -RecurseRemove-Item config.xml
