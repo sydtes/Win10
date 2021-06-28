@@ -1,1 +1,0 @@
-﻿start-process "cmd.exe" "/c C:\Recovery\OEM\Scripts\Logon\LockRecovery.bat"
