@@ -33,9 +33,6 @@
             <Themes>
                 <ThemeName>Theme</ThemeName>
                 <DesktopBackground>C:\Recovery\OEM\Wallpaper\Wallpaper.jpg</DesktopBackground>
-                <SystemUsesLightTheme>false</SystemUsesLightTheme>
-                <UWPAppsUseLightTheme>true</UWPAppsUseLightTheme>
-                <WindowColor>Blue</WindowColor>
             </Themes>
             <EnableStartMenu>true</EnableStartMenu>
             <SignInMode>2</SignInMode>
