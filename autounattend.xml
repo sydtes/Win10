@@ -79,7 +79,7 @@
             </UserAccounts>
 <FirstLogonCommands>
    <SynchronousCommand wcm:action="add">
-      <CommandLine>powershell.exe -NoProfile -ExecutionPolicy Bypass -File &quot;C:\Recovery\OEM\C4L\Scripts\unattend\Logon.ps1&quot;</CommandLine>
+      <CommandLine>powershell.exe -NoProfile -ExecutionPolicy Bypass -File &quot;C:\Recovery\OEM\Scripts\unattend\Logon.ps1&quot;</CommandLine>
       <Description>Run Once</Description>
       <Order>1</Order>
    </SynchronousCommand>
