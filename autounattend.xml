@@ -31,8 +31,8 @@
         </component>
         <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
             <Themes>
-                <ThemeName>Theme</ThemeName>
-                <DesktopBackground>C:\Recovery\OEM\Wallpaper\Wallpaper.jpg</DesktopBackground>
+                <ThemeName>Computers 4 Learning</ThemeName>
+                <DesktopBackground>C:\Recovery\OEM\C4L\Wallpaper\C4L_Wallpaper.jpg</DesktopBackground>
             </Themes>
             <EnableStartMenu>true</EnableStartMenu>
             <SignInMode>2</SignInMode>
@@ -45,7 +45,7 @@
             <RunSynchronous>
                 <RunSynchronousCommand wcm:action="add">
                     <Description>Installing Software</Description>
-                    <Path>powershell.exe -NoProfile -ExecutionPolicy Bypass -File &quot;C:\Recovery\OEM\Scripts\unattend\Install.ps1&quot;</Path>
+                    <Path>powershell.exe -NoProfile -ExecutionPolicy Bypass -File &quot;C:\Recovery\OEM\C4L\Scripts\unattend\Install.ps1&quot;</Path>
                     <Order>1</Order>
                 </RunSynchronousCommand>
             </RunSynchronous>
@@ -77,6 +77,13 @@
                     </LocalAccount>
                 </LocalAccounts>
             </UserAccounts>
+<FirstLogonCommands>
+   <SynchronousCommand wcm:action="add">
+      <CommandLine>powershell.exe -NoProfile -ExecutionPolicy Bypass -File &quot;C:\Recovery\OEM\C4L\Scripts\unattend\Logon.ps1&quot;</CommandLine>
+      <Description>Run Once</Description>
+      <Order>1</Order>
+   </SynchronousCommand>
+</FirstLogonCommands>
         </component>
         <component name="Microsoft-Windows-International-Core" processorArchitecture="wow64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
             <UserLocale>en-AU</UserLocale>
